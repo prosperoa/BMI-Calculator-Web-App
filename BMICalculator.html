@@ -5,30 +5,37 @@
         <title>BMI Calculator</title>
     </head>
     <body>
-        <div>
-            <input type="text" id="feet">ft</input>
-            <input type="text" id="inches">in</input>
-            <input type="text" id="weight">lbs</input>
-            <button onclick="BMICalculator()">Calculate BMI</button>
+	<div id="box"><center>
+		<div>
+			<p>Body Mass Index<br>Calculator</p><div></div>
+			<input type="text" id="feet">ft</input>
+		</div>
+		<div>
+			<input type="text" id="inches">in</input>
+		</div>
+		<div>
+			<input type="text" id="weight">lbs</input>
+		</div>
+		<button onclick="bmiCalc()">Calculate BMI</button>
         
-            <p id="demo"></p>
+		<p>Your BMI is: </p>
+		<p id="demo"></p>
     
-            <script>
-                function BMICalculator() {
-                
-                    var heightFeet = document.getElementById("feet").value;
-                    var heightInches = document.getElementById("inches").value;
-                    var weight = document.getElementById("weight").value;
+		<script>
+                	function bmiCalc() {
+                		var heightFeet = document.getElementById("feet").value;
+                   		var heightInches = document.getElementById("inches").value;
+                    		var weight = document.getElementById("weight").value;
 		
-                    heightCalc = (heightFeet * 12) + heightInches;
-                    heightTotal = heightCalc * heightCalc;
-                    bmi = (weight / heightTotal) * 703;
-                    var bmiRound = bmi.toPrecision(2);
+                    		heightCalc = (heightFeet * 12) + heightInches;
+                    		heightTotal = heightCalc * heightCalc;
+                    		bmi = (weight / heightTotal) * 703;
+                    		var bmiRound = bmi.toPrecision(2);
                 
-                    document.getElementById("demo").innerHTML = bmiRound;
+                		document.getElementById("demo").innerHTML = bmiRound;
             
-                }
+                	}
             </script>
-        </div>
+	<center></div>
     </body>
 </html>
