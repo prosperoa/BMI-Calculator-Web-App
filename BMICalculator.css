@@ -19,11 +19,11 @@ div {
 
 #box {
     height: 300px;
-	width: 250px;
-	border-radius: 5px;
-	border: 2px solid black;
-	background-color: #45ADA8;
-	position: absolute;
-	margin-left: auto;
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #45ADA8;
+    position: absolute;
+    margin-left: auto;
     margin-right: auto;
 }
