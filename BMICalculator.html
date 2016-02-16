@@ -20,10 +20,10 @@
                     var heightInches = document.getElementById("inches").value;
                     var weight = document.getElementById("weight").value;
 		
-                    heightCalc = heightFeet * 12 + heightInches;
+                    heightCalc = (heightFeet * 12) + heightInches;
                     heightTotal = heightCalc * heightCalc;
-                    bmi = ((weight / heightTotal) * 703);
-                    var bmiRound = bmi.toPrecision(3);
+                    bmi = (weight / heightTotal) * 703;
+                    var bmiRound = bmi.toPrecision(2);
                 
                     document.getElementById("demo").innerHTML = bmiRound;
             
