@@ -1,4 +1,29 @@
-input {
-  <!--buttons need to be stacked
-      on top of each other-->
+* {
+    font-family: cursive;
+}
+
+body {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin: -70px 0 0 -170px;
+
+}
+
+div {
+    padding-bottom: 5px;
+}
+
+#box {
+    height: 300px;
+	width: 250px;
+	border-radius: 5px;
+	border: 2px solid black;
+	background-color: #45ADA8;
+	position: absolute;
+	margin-left: auto;
+    margin-right: auto;
 }
