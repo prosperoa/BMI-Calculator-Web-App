@@ -5,36 +5,81 @@
         <title>BMI Calculator</title>
     </head>
     <body>
-	<div id="box"><center>
-		<div>
-			<p>Body Mass Index<br>Calculator</p><div></div>
-			<input type="text" id="feet">ft</input>
-		</div>
-		<div>
-			<input type="text" id="inches">in</input>
-		</div>
-		<div>
-			<input type="text" id="weight">lbs</input>
-		</div>
-		<button onclick="bmiCalc()">Calculate BMI</button>
+		<div id="box">
+			<p><b>Body Mass Index<br><span style="padding-left: 25px">
+				Calculator</span></b></p>
+			<div></div>
+					
+			<div>
+				<input type="text" id="feet">ft</input>
+			</div>
+			<div>
+				<input type="text" id="inches">in</input>
+			</div>
+			<div>
+				<input type="text" id="weight">lbs</input>
+			</div>
+			<table>
+				<thead>
+					<tr style="border-bottom:2px solid black">
+						<th style="padding: 5px; border-bottom: 2px solid black"><h2>BMI</h2></th>
+						<th style="padding: 5px; border-bottom: 2px solid black;"><h2>
+							Weight Range</h2>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="padding: 5px">&lt;18.5</td>
+						<td style="padding: 5px">Underweight</td>     
+					</tr>
+					<tr>
+						<td style="padding: 5px">18.5-24.9</td>
+						<td style="padding: 5px">Normal Weight</td>
+					</tr>
+					<tr>
+						<td style="padding: 5px">25-29.9</td>
+						<td style="padding: 5px">Overweight</td>
+					</tr>
+					<tr>
+						<td style="padding: 5px">30-39.9</td>
+						<td style="padding: 5px">Obese</td>
+					</tr>
+					<tr>
+						<td style="padding: 5px">&gt;40</td>
+						<td style="padding: 5px">Morbidly Obese</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<button onclick="bmiCalc()">Calculate BMI</button>
         
-		<p>Your BMI is: </p>
-		<p id="demo"></p>
+			<p style="padding-left: 50px">Your BMI is: </p>
+			<p style="padding-left: 70px" class="output" id="bmiResult"></p>
+			<p style="padding-left: 0px" class="output" id="weightRange"></p>
     
-		<script>
-                	function bmiCalc() {
-                		var heightFeet = document.getElementById("feet").value;
-                   		var heightInches = document.getElementById("inches").value;
-                    		var weight = document.getElementById("weight").value;
-		
-                    		heightCalc = (heightFeet * 12) + parseInt(heightInches);
-                    		heightTotal = heightCalc * heightCalc;
-                    		bmi = ((weight / heightTotal) * 703).toFixed(2);
+			<script>
+                function bmiCalc() {
                 
-                		document.getElementById("demo").innerHTML = bmi;
+                    var heightFeet = document.getElementById("feet").value;
+                    var heightInches = document.getElementById("inches").value;
+                    var weight = document.getElementById("weight").value;
+		
+                    heightCalc = heightFeet * 12 + parseInt(heightInches);
+                    heightTotal = heightCalc * heightCalc;
+                    bmi = ((weight / heightTotal) * 703).toFixed(2);
+                
+                    document.getElementById("bmiResult").innerHTML = bmi;
+					
+					var healthyBMI = ("You have a healthy BMI!");
+					var unhealthyBMI = ("You have an unhealthy BMI!");
+					if (bmi > 18.5 && bmi < 25.0)
+						document.getElementById("weightRange").innerHTML = healthyBMI;
+					else
+						document.getElementById("weightRange").innerHTML = unhealthyBMI;
             
-                	}
+                }
             </script>
-	<center></div>
+		</div>
     </body>
 </html>
