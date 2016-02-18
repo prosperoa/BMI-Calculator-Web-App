@@ -8,7 +8,7 @@ body {
     padding: 20px;
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 42%;
     margin: -70px 0 0 -170px;
 
 }
@@ -17,13 +17,35 @@ div {
     padding-bottom: 5px;
 }
 
+div p {
+    padding-left: 40px;
+}
+
+table {
+    position: fixed;
+    margin-left: 300px;
+    margin-top: -140px;
+}
+
+button {
+    margin-left: 45px;
+}
+
 #box {
-    height: 300px;
-    width: 250px;
-    border-radius: 5px;
-    border: 2px solid black;
-    background-color: #45ADA8;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    height: 350px;
+	width: 600px;
+	border-radius: 5px;
+	border: 2px solid black;
+	background-color: #45ADA8;
+	position: relative;
+	padding-left: 20px;
+}
+
+#calcHead {
+    padding-left: 50px;
+}
+
+.output {
+    font-weight: bold;
+    color: #F00000;
 }
