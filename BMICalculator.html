@@ -67,8 +67,7 @@
                     heightCalc = heightFeet * 12 + parseInt(heightInches);
                     heightTotal = heightCalc * heightCalc;
                     bmi = ((weight / heightTotal) * 703).toFixed(2);
-                
-                    document.getElementById("bmiResult").innerHTML = bmi;
+                	document.getElementById("bmiResult").innerHTML = bmi;
 					
 					var healthyBMI = ("You have a healthy BMI!");
 					var unhealthyBMI = ("You have an unhealthy BMI!");
