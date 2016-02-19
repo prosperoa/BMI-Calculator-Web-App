@@ -21,15 +21,54 @@ div p {
     padding-left: 40px;
 }
 
-table {
+thead tr {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+th {
+    padding: 5px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+td {
+    padding: 5px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+
+#iTable {
+    position: fixed;
+    margin-left: 300px;
+    margin-top: -170px;
+}
+
+#mTable {
     position: fixed;
     margin-left: 300px;
     margin-top: -140px;
 }
 
-button {
-    margin-left: 45px;
+#bButton {
+    margin-left: 47px;
 }
+
+#iButton {
+    margin-left: 67px;
+}
+
+#mButton {
+    margin-left: 75px;
+}
+
 
 #box {
     height: 350px;
