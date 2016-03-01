@@ -1,5 +1,6 @@
 * {
     font-family: cursive;
+    color: white;
 }
 
 body {
@@ -21,73 +22,76 @@ div p {
     padding-left: 40px;
 }
 
-thead tr {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-radius: 5px;
+input {
+    box-shadow: inset 1px 1px 2px #333;
+    width: 20%;
+    margin-left: 40px;
+    color: black;
 }
 
-th {
-    padding: 5px;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-radius: 5px;
-}
-
-td {
-    padding: 5px;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-radius: 5px;
-    
-}
-
-#iTable {
-    position: fixed;
-    margin-left: 300px;
-    margin-top: -170px;
-}
-
-#mTable {
+table {
     position: fixed;
     margin-left: 300px;
     margin-top: -140px;
-}
-
-#bButton {
-    margin-left: 47px;
-}
-
-#iButton {
-    margin-left: 67px;
-}
-
-#mButton {
-    margin-left: 75px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 
-#box {
-    height: 350px;
-	width: 600px;
-	border-radius: 5px;
-	border: 2px solid black;
-	background-color: #45ADA8;
-	position: relative;
-	padding-left: 20px;
+
+.td {
+     padding-right: 15px;
 }
 
-#calcHead {
-    padding-left: 50px;
+.btn {
+    border-radius: 60px;
+    font-family: Arial;
+    color: black;
+    font-size: 12px;
+    background: #3498db;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    text-decoration: none;
 }
 
 .output {
     font-weight: bold;
     color: #F00000;
+}
+
+#impTable {
+    position: fixed;
+    margin-left: 300px;
+    margin-top: -170px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#centrImpbtn {
+    padding-left: 70px;
+}
+
+#centrMetbtn {
+    padding-left: 75px;
+}
+
+#calcbtn {
+    padding-left: 53px;
+}
+
+#box {
+    height: 370px;
+	width: 600px;
+	border-radius: 5px;
+	border: 2px solid black;
+	background-color: #C8C8C8;
+	position: relative;
+	padding-left: 20px;
+    background-image: url("http://images.indianexpress.com/2014/10/fitness-main.jpg");
 }
